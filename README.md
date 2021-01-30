@@ -1,4 +1,4 @@
-# AssemblyAES
+#AssemblyAES
 
 the simple project of an AES implementation in 64bit Assembly language
 
@@ -10,7 +10,7 @@ then use like this
 
 ````
 ./aes txt out key mode
-```
+````
 txt is the plain text to encrypt or the cipher text to decrypt
 
 out is the file to save the result
