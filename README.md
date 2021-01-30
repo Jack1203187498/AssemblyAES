@@ -2,6 +2,33 @@
 
 the simple project of an AES implementation in 64bit Assembly language
 
+## run
+
+first use make to compile
+
+then use like this
+
+````
+./aes txt out key mode
+```
+txt is the plain text to encrypt or the cipher text to decrypt
+
+out is the file to save the result
+
+mode is programmed as below:
+
+1:encrypt, simple implementation of the AES
+
+2:decrypt, simple implementation of the AES
+
+3:multi-process encrypt, use matrix to accelerate, just conduct the encrypt round, so this is the fastest in theory
+
+4:multi-thread encrypt, while because there is only one CPU, so this is not fast
+
+5:multi-process encrypt, use matrix to accelerate AES, can encrypt the file and get the result, but because most of the time is wasted in the file IO process, so the speed is not that convictive
+
+6:multi-process encrypt, use matrix to accelerate AES, the base logic is the same as 5, but this time we don't move the file pointer, which means this is not really a process for the result but for the speed, this speed is more convictive than 5
+
 ## 执行
 首先使用make进行编译
 
